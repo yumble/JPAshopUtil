@@ -22,7 +22,7 @@ public class Member {
     private Address address;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "member")
+    @OneToMany(mappedBy = "member") //order table에 있는 member에 의해 매핑된거야
     private List<Order> orders = new ArrayList<>();
 
 }
