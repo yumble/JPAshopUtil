@@ -29,6 +29,8 @@ public class ItemController {
     public String create(BookForm form) {
 
         Book book = new Book();
+        //book.createBook(form);이 훨씬 나은 설계
+        //or book.createBook(form.getName()...)
         book.setName(form.getName());
         book.setPrice(form.getPrice());
         book.setStockQuantity(form.getStockQuantity());
